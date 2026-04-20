@@ -57,13 +57,13 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <Link
-              href="#contact"
+              href="/#contact"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/60 bg-white/80 px-8 text-sm font-semibold text-ctg-navy shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white hover:shadow-xl"
             >
               Free Consultation →
             </Link>
             <Link
-              href="#services"
+              href="/#services"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/35 bg-white/15 px-8 text-sm font-semibold text-white shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white/25 hover:shadow-xl"
             >
               Explore Services
@@ -99,7 +99,6 @@ export function Hero() {
               height={720}
               className="relative z-0 aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl shadow-sky-900/40 sm:aspect-[3/2]"
               sizes="(min-width: 1024px) 42vw, 100vw"
-              priority
             />
             <div className="absolute -bottom-3 left-2 z-10 max-w-[240px] rounded-xl border border-zinc-100 bg-white p-4 shadow-xl sm:-bottom-4 sm:left-4">
               <div className="flex items-start gap-3">

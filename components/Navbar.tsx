@@ -5,10 +5,10 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#top", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About Us" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "/#top", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/#about", label: "About Us" },
+  { href: "/#testimonials", label: "Testimonials" },
 ] as const;
 
 export function Navbar() {
@@ -18,7 +18,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-zinc-200/90 bg-white/95 shadow-sm backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5 sm:px-8 lg:px-10">
         <Link
-          href="#top"
+          href="/#top"
           className="flex shrink-0 items-center"
           onClick={() => setOpen(false)}
         >
@@ -28,7 +28,6 @@ export function Navbar() {
             width={220}
             height={64}
             className="h-11 w-auto max-w-[200px] object-contain object-left sm:h-12 sm:max-w-[240px]"
-            priority
           />
         </Link>
 
@@ -46,7 +45,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/#contact"
             className="inline-flex h-12 items-center justify-center rounded-xl border border-sky-200/30 bg-ctg-navy/90 px-6 text-sm font-semibold text-white shadow-lg shadow-sky-300/25 backdrop-blur-md transition-all hover:bg-ctg-navy hover:shadow-xl"
           >
             Book Consultation
@@ -55,7 +54,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <Link
-            href="#contact"
+            href="/#contact"
             className="inline-flex h-11 items-center justify-center rounded-xl border border-sky-200/30 bg-ctg-navy/90 px-4 text-xs font-semibold text-white shadow-md shadow-sky-300/25 backdrop-blur-md"
           >
             Book
@@ -98,7 +97,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               className="mt-2 inline-flex h-12 items-center justify-center rounded-xl border border-sky-200/30 bg-ctg-navy/90 px-6 text-center text-sm font-semibold text-white shadow-lg shadow-sky-300/25 backdrop-blur-md transition-all hover:bg-ctg-navy"
               onClick={() => setOpen(false)}
             >

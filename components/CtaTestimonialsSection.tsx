@@ -82,7 +82,7 @@ export function CtaTestimonialsSection() {
 
           <div className="flex shrink-0 flex-col gap-4 sm:flex-row sm:flex-wrap lg:justify-end">
             <Link
-              href="#contact"
+              href="/#contact"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/55 bg-white/80 px-8 text-sm font-semibold text-ctg-navy shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white hover:shadow-xl"
             >
               Book Free Consultation →

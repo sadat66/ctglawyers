@@ -130,7 +130,7 @@ export function SuccessStoriesSection() {
                     </div>
 
                     <Link
-                      href="#contact"
+                      href="/#contact"
                       className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-ctg-navy transition-colors hover:text-ctg-sky"
                     >
                       Start Your Success Story

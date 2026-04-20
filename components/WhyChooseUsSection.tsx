@@ -126,7 +126,7 @@ export function WhyChooseUsSection() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Link
-                href="#contact"
+                href="/#contact"
                 className="inline-flex h-14 items-center justify-center rounded-xl border border-sky-200/60 bg-ctg-navy/90 px-8 text-sm font-semibold text-white shadow-lg shadow-sky-200/35 backdrop-blur-md transition-all hover:bg-ctg-navy hover:shadow-xl"
               >
                 Start Your Journey Today

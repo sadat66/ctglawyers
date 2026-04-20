@@ -40,14 +40,6 @@ function IconSuitcase({ className }: { className?: string }) {
   );
 }
 
-function IconUserPlus({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-    </svg>
-  );
-}
-
 function IconHeart({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -60,6 +52,14 @@ function IconDocument({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+    </svg>
+  );
+}
+
+function IconStar({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
     </svg>
   );
 }
@@ -83,62 +83,70 @@ function ChevronRight({ className }: { className?: string }) {
 
 const services = [
   {
-    title: "Visitor Visa",
+    title: "Visitor & short-stay visas",
     description:
-      "Visit Australia for tourism, business, or to see family and friends.",
+      "eVisitor (651), ETA (601), and Visitor (600) streams for tourism, family visits, and business visitors.",
     icon: IconAirplane,
     iconWrap: "bg-blue-500",
+    href: "/services/visitor-short-stay",
   },
   {
-    title: "Student Visa",
+    title: "Student & education visas",
     description:
-      "Study in Australia and obtain world-class education.",
+      "Subclass 500 (all sectors), Guardian 590, Training 407, and course/GS counseling.",
     icon: IconGradCap,
     iconWrap: "bg-violet-600",
+    href: "/services/student-education-visas",
   },
   {
     title: "Temporary Graduate Visa",
     description:
-      "Recently finished a course in Australia? Start your career with unrestricted post-study work opportunities.",
+      "Subclass 485: post-study work, stream choice, and pathways to sponsorship or skilled PR.",
     icon: IconMedalRibbon,
     iconWrap: "bg-orange-500",
+    href: "/services/temporary-graduate",
   },
   {
-    title: "Employer Sponsored Visas",
+    title: "Employer-sponsored visas",
     description:
-      "Migration is easy when an Australian business is interested in sponsoring you. These sponsored visas let you live and work in Australia permanently.",
+      "Subclass 482 (TSS), 186 (ENS), 494 (regional), and DAMA agreements for genuine employer need.",
     icon: IconBuilding,
     iconWrap: "bg-emerald-600",
+    href: "/services/employer-sponsored",
   },
   {
-    title: "Skilled Migration Visas",
+    title: "Skilled migration (points-tested)",
     description:
-      "Live and work in Australia permanently based on your skills and qualifications.",
+      "Subclass 189, 190, 491, and 191—plus ACS, Engineers Australia, VETASSESS, and TRA assessment support.",
     icon: IconSuitcase,
     iconWrap: "bg-indigo-400",
+    href: "/services/skilled-migration",
   },
   {
-    title: "Parent Visas",
+    title: "Family & partner visas",
     description:
-      "Bring your parents to Australia and reunite your family.",
-    icon: IconUserPlus,
-    iconWrap: "bg-rose-500",
-  },
-  {
-    title: "Partner Visas",
-    description:
-      "Reunite with your spouse or partner in Australia.",
+      "Partner 820/801 & 309/100, prospective marriage 300, parent pathways, and child 101/802.",
     icon: IconHeart,
     iconWrap: "bg-pink-500",
+    href: "/services/family-partner-visas",
   },
   {
-    title: "Other Visas",
+    title: "Business & talent visas",
     description:
-      "If you can’t find your expected visa, then click here to find the right visa for your unique circumstances.",
+      "Global Talent 858, Business Innovation & Investment 188, and Resident Return 155/157.",
+    icon: IconStar,
+    iconWrap: "bg-amber-500",
+    href: "/services/business-talent-visas",
+  },
+  {
+    title: "Other visas",
+    description:
+      "Browse all service pages, or get help with bridging, waivers, and matters that don’t fit a single card.",
     icon: IconDocument,
     iconWrap: "bg-teal-600",
+    href: "/services/other-visas",
   },
-] as const;
+];
 
 export function ServicesSection() {
   return (
@@ -163,7 +171,7 @@ export function ServicesSection() {
         </header>
 
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-7 lg:grid-cols-4 lg:gap-8">
-          {services.map(({ title, description, icon: Icon, iconWrap }) => (
+          {services.map(({ title, description, icon: Icon, iconWrap, href }) => (
             <li key={title}>
               <article className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-md shadow-slate-200/60 ring-1 ring-slate-100 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-200/80 sm:p-7">
                 <div
@@ -176,7 +184,7 @@ export function ServicesSection() {
                   {description}
                 </p>
                 <Link
-                  href="#contact"
+                  href={href}
                   className="mt-5 inline-flex items-center gap-0.5 text-sm font-semibold text-ctg-navy transition-colors hover:text-ctg-sky"
                 >
                   Learn more
