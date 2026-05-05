@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function IconPhone() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden>
@@ -42,7 +44,7 @@ type ContactInfoItem = {
 const contactInfo: ContactInfoItem[] = [
   {
     title: "WhatsApp",
-    lines: ["+61 424 252 787"],
+    lines: ["+61 0424 252 787"],
     icon: IconPhone,
   },
   {
@@ -75,9 +77,8 @@ export function ContactSection() {
           </span>
         </p>
 
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-start lg:gap-16">
-          <div>
-            <p className="mb-4">
+        <div className="max-w-2xl">
+          <p className="mb-4">
               <span className="inline-block rounded-full bg-sky-100 px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-ctg-navy">
                 Get in touch
               </span>
@@ -147,101 +148,18 @@ export function ContactSection() {
                 TikTok
               </a>
             </div>
-          </div>
+        </div>
 
-          <div className="rounded-2xl bg-[linear-gradient(180deg,#0d5078_0%,#0a4a71_100%)] p-6 text-white shadow-xl shadow-sky-900/30 sm:p-8 lg:p-9">
-            <h3 className="text-3xl font-bold tracking-tight">Book Your Free Consultation</h3>
-            <p className="mt-2 text-sm text-white/85">
-              Fill out the form below and we&apos;ll get back to you within 24 hours.
-            </p>
-
-            <form className="mt-6 space-y-4" action="#" method="post">
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-white/85">
-                  Full Name
-                </span>
-                <input
-                  type="text"
-                  name="fullName"
-                  placeholder="John Doe"
-                  className="h-11 w-full rounded-md border border-white/20 bg-white/8 px-3 text-sm text-white placeholder:text-white/55 outline-none transition-colors focus:border-white/50"
-                />
-              </label>
-
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-white/85">
-                  Email Address
-                </span>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="john@example.com"
-                  className="h-11 w-full rounded-md border border-white/20 bg-white/8 px-3 text-sm text-white placeholder:text-white/55 outline-none transition-colors focus:border-white/50"
-                />
-              </label>
-
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-white/85">
-                  Phone Number
-                </span>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+61 424 252 787"
-                  className="h-11 w-full rounded-md border border-white/20 bg-white/8 px-3 text-sm text-white placeholder:text-white/55 outline-none transition-colors focus:border-white/50"
-                />
-              </label>
-
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-white/85">
-                  Visa Type of Interest
-                </span>
-                <select
-                  name="visaType"
-                  defaultValue=""
-                  className="h-11 w-full rounded-md border border-white/20 bg-white/8 px-3 text-sm text-white outline-none transition-colors focus:border-white/50"
-                >
-                  <option value="" disabled className="text-slate-700">
-                    Select a visa type
-                  </option>
-                  <option value="visitor" className="text-slate-700">
-                    Visitor Visa
-                  </option>
-                  <option value="student" className="text-slate-700">
-                    Student Visa
-                  </option>
-                  <option value="partner" className="text-slate-700">
-                    Partner Visa
-                  </option>
-                  <option value="skilled" className="text-slate-700">
-                    Skilled Migration Visa
-                  </option>
-                  <option value="other" className="text-slate-700">
-                    Other
-                  </option>
-                </select>
-              </label>
-
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-white/85">
-                  Message
-                </span>
-                <textarea
-                  name="message"
-                  rows={4}
-                  placeholder="Tell us about your situation..."
-                  className="w-full rounded-md border border-white/20 bg-white/8 px-3 py-2.5 text-sm text-white placeholder:text-white/55 outline-none transition-colors focus:border-white/50"
-                />
-              </label>
-
-              <button
-                type="submit"
-                className="mt-2 inline-flex h-14 w-full items-center justify-center rounded-xl border border-white/55 bg-white/85 px-8 text-sm font-semibold text-ctg-navy shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white hover:shadow-xl"
-              >
-                Submit Application →
-              </button>
-            </form>
-          </div>
+        <div className="mt-12 overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-xl shadow-sky-200/40 md:mt-14 lg:mt-16">
+          <Image
+            src="/ctg.png"
+            alt="CTG Lawyers consultation banner"
+            width={2048}
+            height={8198}
+            className="h-auto w-full"
+            sizes="(min-width: 1280px) 1240px, (min-width: 1024px) 920px, 100vw"
+            priority
+          />
         </div>
       </div>
     </section>

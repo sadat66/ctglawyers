@@ -42,13 +42,13 @@ export function TopBar() {
     <div className="bg-ctg-navy text-white">
       <div className="mx-auto flex max-w-7xl items-center justify-end gap-6 px-6 py-3 text-xs sm:px-8 sm:text-sm lg:px-10">
         <a
-          href="https://wa.me/61424252787"
+          href="https://wa.me/610424252787"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-white/95 transition-opacity hover:opacity-80"
         >
           <PhoneIcon className="shrink-0 opacity-90" />
-          <span>WhatsApp: +61 424 252 787</span>
+          <span>WhatsApp: +61 0424 252 787</span>
         </a>
         <a
           href="mailto:info@ctglawyers.com.au"
