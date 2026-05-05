@@ -88,12 +88,12 @@ export function CtaTestimonialsSection() {
               Book Free Consultation →
             </Link>
             <a
-              href="https://wa.me/61424252787"
+              href="https://wa.me/610424252787"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/35 bg-white/15 px-8 text-sm font-semibold text-white shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white/25 hover:shadow-xl"
             >
-              WhatsApp: +61 424 252 787
+              WhatsApp: +61 0424 252 787
             </a>
           </div>
         </div>

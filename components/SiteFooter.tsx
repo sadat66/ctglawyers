@@ -49,12 +49,12 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm text-slate-600">
               <li>
                 <a
-                  href="https://wa.me/61424252787"
+                  href="https://wa.me/610424252787"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-ctg-navy"
                 >
-                  WhatsApp +61 424 252 787
+                  WhatsApp +61 0424 252 787
                 </a>
               </li>
               <li>

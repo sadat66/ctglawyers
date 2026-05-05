@@ -132,12 +132,12 @@ export function WhyChooseUsSection() {
                 Start Your Journey Today
               </Link>
               <a
-                href="https://wa.me/61424252787"
+                href="https://wa.me/610424252787"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-14 items-center justify-center rounded-xl border border-sky-200/70 bg-white/60 px-8 text-sm font-semibold text-slate-700 shadow-lg shadow-sky-200/25 backdrop-blur-md transition-all hover:bg-white/80 hover:shadow-xl"
               >
-                WhatsApp: +61 424 252 787
+                WhatsApp: +61 0424 252 787
               </a>
             </div>
           </div>
