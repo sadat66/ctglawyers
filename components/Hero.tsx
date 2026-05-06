@@ -40,7 +40,7 @@ export function Hero() {
               🛡️
             </span>
             <span className="font-medium">
-              Registered Migration Agents MARN: 1234567
+              Registered Migration Agents LPN: 5512489
             </span>
             <span className="text-amber-300" aria-label="Five star rating">
               ★★★★★
@@ -60,7 +60,7 @@ export function Hero() {
               href="/#contact"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/60 bg-white/80 px-8 text-sm font-semibold text-ctg-navy shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white hover:shadow-xl"
             >
-              Free Consultation →
+              Book Consultation →
             </Link>
             <Link
               href="/#services"

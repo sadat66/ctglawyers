@@ -75,7 +75,7 @@ export function CtaTestimonialsSection() {
               Australian Journey?
             </h2>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-white/85">
-              Book a free consultation today and get expert guidance on your visa
+              Book a consultation today and get expert guidance on your visa
               options. Limited consultation slots available this month.
             </p>
           </div>
@@ -85,7 +85,7 @@ export function CtaTestimonialsSection() {
               href="/#contact"
               className="inline-flex h-14 items-center justify-center rounded-xl border border-white/55 bg-white/80 px-8 text-sm font-semibold text-ctg-navy shadow-lg shadow-sky-900/20 backdrop-blur-md transition-all hover:bg-white hover:shadow-xl"
             >
-              Book Free Consultation →
+              Book Consultation →
             </Link>
             <a
               href="https://wa.me/610424252787"

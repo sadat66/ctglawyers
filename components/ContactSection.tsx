@@ -73,7 +73,7 @@ export function ContactSection() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <p className="mb-10 text-center md:mb-12">
           <span className="inline-flex h-12 items-center justify-center rounded-xl border border-sky-200/50 bg-ctg-navy/90 px-7 text-xs font-semibold text-white shadow-lg shadow-sky-200/30 backdrop-blur-md">
-            Schedule a Free Consultation
+            Schedule a Consultation
           </span>
         </p>
 
@@ -89,7 +89,7 @@ export function ContactSection() {
               Australian Journey?
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600">
-              Book a free consultation with our expert migration agents today.
+              Book a consultation with our expert migration agents today.
               We&apos;ll assess your situation and provide clear guidance on the best
               visa pathway for you.
             </p>

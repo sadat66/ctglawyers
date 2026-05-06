@@ -47,7 +47,7 @@ const steps: ProcessStep[] = [
     id: 1,
     title: "Initial Consultation",
     description:
-      "Book a free consultation where we assess your eligibility and discuss your visa options.",
+      "Book a consultation where we assess your eligibility and discuss your visa options.",
     icon: IconHandshake,
     iconWrap: "bg-blue-500",
   },
